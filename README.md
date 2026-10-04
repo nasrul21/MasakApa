@@ -1,8 +1,13 @@
 # MasakApa
 
-MasakApa is a local AI meal planner for busy families. It was built for my wife, who works and also cares for our two children. After a long day, the app turns the ingredients already available at home into practical meal ideas.
+MasakApa is a local AI meal planner for busy families. It was built for my wife, who works and also cares for our children. After a long day, the app turns the ingredients already available at home into practical meal ideas.
 
 ## Why it exists
+
+I made MasakApa for my wife. She works and also cares for our children,
+so deciding what to cook after a long day can become another source of stress.
+This project is a small, practical tool designed around her real situation:
+limited time, limited energy, and the ingredients already available at home.
 
 Choosing what to cook can be difficult when time, energy, and ingredients are limited. MasakApa helps by considering:
 
@@ -11,6 +16,23 @@ Choosing what to cook can be difficult when time, energy, and ingredients are li
 - Family serving size
 - Required missing ingredients and seasonings
 - Optional ingredients
+
+## Solution
+
+MasakApa turns a short list of ingredients into practical meal ideas that fit
+the user's situation. The user enters what is available at home, chooses a
+cooking mood, and selects the number of family servings. The app then uses
+local Gemma through Ollama to generate three recipe suggestions.
+
+Each suggestion explains why it fits, separates available ingredients from
+required and optional additions, and provides concise cooking steps. Missing
+seasonings are called out and included in the relevant cooking instructions.
+The selected recipe can be opened in a modal, copied, or downloaded for use
+while cooking.
+
+This reduces the mental effort of deciding what to cook without requiring a
+large recipe search or sending household ingredient information to a hosted AI
+service.
 
 ## Demo
 
