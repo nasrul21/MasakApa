@@ -52,6 +52,25 @@ OpenAI-compatible client
 Ollama → Gemma 3 4B
 ```
 
+## Replaceable AI provider
+
+Ollama and Gemma are the default provider, but they are not hard-coded into
+the application. MasakApa uses the OpenAI-compatible Python client, so another
+local or hosted provider can be configured through the same environment
+variables:
+
+```env
+AI_BASE_URL=https://your-provider.example/v1
+AI_API_KEY=your-provider-key
+AI_MODEL=your-model-name
+```
+
+The replacement provider must support the OpenAI-compatible chat completions
+API and return the structured recipe data expected by MasakApa. This makes it
+possible to switch models without changing the Streamlit interface or the
+meal-planning flow. Providers with a different API format can still be added
+by introducing an adapter in `providers/ai.py`.
+
 ## Requirements
 
 - Python 3.9+
