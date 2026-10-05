@@ -2,6 +2,8 @@
 
 MasakApa is a local AI meal planner for busy families. It was built for my wife, who works and also cares for our children. After a long day, the app turns the ingredients already available at home into practical meal ideas.
 
+![MasakApa preview](MasakApa_Thumbnail.jpg)
+
 ## Why it exists
 
 I made MasakApa for my wife. She works and also cares for our children,
@@ -36,7 +38,7 @@ service.
 
 ## Demo
 
-[Watch the demo recording](MasakApa_Demo.mov)
+[Watch the MasakApa demo recording](MasakApa_Demo.mov)
 
 ## AI architecture
 
